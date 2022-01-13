@@ -1,7 +1,7 @@
 {
   "name": "covid-pfd",
   "version": "0.0.1",
-  "homepage": "./",
+  "homepage": "https://yu1hpa.github.io/conbu",
   "scripts": {
     "start": "webpack serve --mode=development --open",
     "build": "export NODE_ENV=production && webpack",
