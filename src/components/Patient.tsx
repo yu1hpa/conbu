@@ -92,23 +92,52 @@ class Patient extends React.Component<{}, typePatientsState> {
       let [date, adp] = this.fetchTodaysInfo();
       let factors = this.primeFactors(adp);
       return(
-        <div>
-          <div>
-            <h1>
-              Number of COVID Infected people prime factor decomposition
-            </h1>
-            <h1>
-              (コロナ感染者数の素因数分解)
+        <div className="bg-gray-200 h-screen">
+          <div className="flex justify-center">
+            <h1 className="text-5xl font-mono text-pink-800">
+              CONBU
             </h1>
           </div>
+          <div className="flex justify-center">
+            <span className="underline decoration-green-600 text-pink-800">CO</span>
+              VID-19 INFECTED PEOPLE SOI
+            <span className="underline decoration-green-600 text-pink-800">N</span>
+              SUU
+            <span className="underline decoration-green-600 text-pink-800">BU</span>NKAI
+            (素因数分解)
+          </div>
 
-          <div>最新({date}) : {adp}人</div>
-          <div>
-            素因数分解 :
-            {Object.keys(factors).map(key => (
-              <span key={key}>  {factors[Number(key)]}</span>
-            ))}
-            </div>
+          <br />
+          <br />
+          <br />
+
+          <div className="flex justify-center">
+            <h2 className="text-2xl">
+              <span className="text-base">新規感染者(全国)</span>
+              <br />
+              <strong className="underline decoration-red-600">+ {adp}</strong>
+              <span className="text-base">人</span>
+            </h2>
+          </div>
+
+          <br />
+          <br />
+
+          <div className="flex justify-center">
+            <h2 className="text-2xl">
+              <span className="text-base">素因数分解</span>
+              <br />
+              <strong>
+                {Object.keys(factors).map(key => (
+                  <span key={key} className="underline decoration-green-600 px-2">{factors[Number(key)]}</span>
+                ))}
+              </strong>
+            </h2>
+          </div>
+
+          <div className="flex justify-center item-center absolute inset-x-0 bottom-20 h-8 bg-gray-700">
+            <span className="flex items-center text-slate-200">最終更新日 : {date}</span>
+          </div>
         </div>
       );
     }
