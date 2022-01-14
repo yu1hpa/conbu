@@ -12,6 +12,7 @@
     "@types/postcss-import": "^14.0.0",
     "@types/tailwindcss": "^3.0.2",
     "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
     "postcss": "^8.4.5",
     "postcss-import": "^14.0.2",
     "postcss-loader": "^6.2.1",
