@@ -92,7 +92,7 @@ class Patient extends React.Component<{}, typePatientsState> {
       let [date, adp] = this.fetchTodaysInfo();
       let factors = this.primeFactors(adp);
       return(
-        <div className="bg-gray-200 h-screen">
+        <div>
           <div className="flex justify-center">
             <h1 className="text-5xl font-mono text-pink-800">
               CONBU
