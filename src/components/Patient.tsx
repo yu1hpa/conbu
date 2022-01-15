@@ -94,24 +94,6 @@ class Patient extends React.Component<{}, typePatientsState> {
       return(
         <div>
           <div className="flex justify-center">
-            <h1 className="text-5xl font-mono text-pink-800">
-              CONBU
-            </h1>
-          </div>
-          <div className="flex justify-center">
-            <span className="underline decoration-green-600 text-pink-800">CO</span>
-              VID-19 INFECTED PEOPLE SOI
-            <span className="underline decoration-green-600 text-pink-800">N</span>
-              SUU
-            <span className="underline decoration-green-600 text-pink-800">BU</span>NKAI
-            (素因数分解)
-          </div>
-
-          <br />
-          <br />
-          <br />
-
-          <div className="flex justify-center">
             <h2 className="text-2xl">
               <span className="text-base">新規感染者(全国)</span>
               <br />
