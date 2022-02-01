@@ -3,9 +3,8 @@
   "version": "0.0.1",
   "homepage": "https://yu1hpa.github.io/conbu",
   "scripts": {
-    "start": "webpack serve --mode=development --open",
-    "build": "export NODE_ENV=production && webpack",
-    "build-prod": "webpack --mode=production"
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "@types/node": "^17.0.8",
