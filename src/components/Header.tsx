@@ -8,11 +8,11 @@ export const Header = () => {
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
       <div  className="py-4 grid place-items-center">
-        <a className="text-center hover:opacity-50">
+        <div className="text-center hover:opacity-50">
           <h1 className="text-5xl font-mono text-pink-800">
             <a href="https://github.com/yu1hpa/conbu">CONBU</a>
           </h1>
-        </a>
+        </div>
       </div>
       <div className="flex justify-center">
         <span className="underline decoration-green-600 text-pink-800">CO</span>
